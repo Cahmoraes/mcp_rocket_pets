@@ -1,0 +1,11 @@
+[
+    {
+        "label": "ssss",
+        "kind": 6,
+        "importPath": "ex_lint",
+        "description": "ex_lint",
+        "peekOfCode": "class ssss:\n    pass",
+        "detail": "ex_lint",
+        "documentation": {}
+    }
+]
