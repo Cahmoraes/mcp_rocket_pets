@@ -1,5 +1,61 @@
 [
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "BIGINT",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "BIGINT",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "Engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -13,6 +69,94 @@
         "description": "sqlalchemy",
         "isExtraImport": true,
         "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Mapped",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "mapped_column",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleTable",
+        "importPath": "src.models.sqlite.entities.people",
+        "description": "src.models.sqlite.entities.people",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.people",
         "documentation": {}
     },
     {
@@ -30,6 +174,33 @@
         "description": "sqlalchemy.engine",
         "isExtraImport": true,
         "detail": "sqlalchemy.engine",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleTable",
+        "kind": 6,
+        "importPath": "src.models.sqlite.entities.people",
+        "description": "src.models.sqlite.entities.people",
+        "peekOfCode": "class PeopleTable(Base):\n    __tablename__ = \"people\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    first_name: Mapped[str] = mapped_column(String, nullable=False)\n    last_name: Mapped[str] = mapped_column(String, nullable=False)\n    age: Mapped[int] = mapped_column(BIGINT, nullable=False)\n    pet_id: Mapped[PetsTable] = mapped_column(ForeignKey(\"pets.id\"))\n    pets: Mapped[List[PetsTable]] = relationship(back_populates=\"owner\")\n    def __repr__(self):\n        return f\"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]\"",
+        "detail": "src.models.sqlite.entities.people",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "kind": 6,
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "peekOfCode": "class PetsTable(Base):\n    __tablename__ = \"pets\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    name: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    type: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    owner: Mapped[PeopleTable] = relationship(back_populates=\"pets\")\n    def __repr__(self):\n        return f\"Pets [name={self.name}], type={self.type}\"",
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "peekOfCode": "Base = declarative_base()",
+        "detail": "src.models.sqlite.settings.base",
         "documentation": {}
     },
     {
