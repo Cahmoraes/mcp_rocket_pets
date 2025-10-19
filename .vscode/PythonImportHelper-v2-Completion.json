@@ -8,6 +8,38 @@
         "documentation": {}
     },
     {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "List",
         "importPath": "typing",
         "description": "typing",
@@ -128,35 +160,99 @@
         "documentation": {}
     },
     {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "UnboundExecutionError",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
+        "importPath": "src.models.sqlite.entities",
+        "description": "src.models.sqlite.entities",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
+        "detail": "src.models.sqlite.entities",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "src.models.sqlite.settings.base",
-        "description": "src.models.sqlite.settings.base",
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities",
+        "description": "src.models.sqlite.entities",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.base",
+        "detail": "src.models.sqlite.entities",
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "src.models.sqlite.settings.base",
-        "description": "src.models.sqlite.settings.base",
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.base",
+        "detail": "src.models.sqlite.settings.connection",
         "documentation": {}
     },
     {
-        "label": "PeopleTable",
-        "importPath": "src.models.sqlite.entities.people",
-        "description": "src.models.sqlite.entities.people",
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.people",
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "mock",
+        "importPath": "unittest",
+        "description": "unittest",
+        "isExtraImport": true,
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "UnifiedAlchemyMagicMock",
+        "importPath": "mock_alchemy.mocking",
+        "description": "mock_alchemy.mocking",
+        "isExtraImport": true,
+        "detail": "mock_alchemy.mocking",
         "documentation": {}
     },
     {
@@ -166,6 +262,22 @@
         "importPath": "pytest",
         "description": "pytest",
         "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepository",
+        "importPath": "src.models.sqlite.repositories.pets_repository",
+        "description": "src.models.sqlite.repositories.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.repositories.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
         "documentation": {}
     },
     {
@@ -181,7 +293,7 @@
         "kind": 6,
         "importPath": "src.models.sqlite.entities.people",
         "description": "src.models.sqlite.entities.people",
-        "peekOfCode": "class PeopleTable(Base):\n    __tablename__ = \"people\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    first_name: Mapped[str] = mapped_column(String, nullable=False)\n    last_name: Mapped[str] = mapped_column(String, nullable=False)\n    age: Mapped[int] = mapped_column(BIGINT, nullable=False)\n    pet_id: Mapped[PetsTable] = mapped_column(ForeignKey(\"pets.id\"))\n    pets: Mapped[List[PetsTable]] = relationship(back_populates=\"owner\")\n    def __repr__(self):\n        return f\"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]\"",
+        "peekOfCode": "class PeopleTable(Base):\n    __tablename__ = \"people\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    first_name: Mapped[str] = mapped_column(String, nullable=False)\n    last_name: Mapped[str] = mapped_column(String, nullable=False)\n    age: Mapped[int] = mapped_column(BIGINT, nullable=False)\n    pet_id: Mapped[int] = mapped_column(ForeignKey(\"pets.id\"))\n    pets: Mapped[List[PetsTable]] = relationship(back_populates=\"owner\")\n    def __repr__(self):\n        return f\"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]\"",
         "detail": "src.models.sqlite.entities.people",
         "documentation": {}
     },
@@ -192,6 +304,51 @@
         "description": "src.models.sqlite.entities.pets",
         "peekOfCode": "class PetsTable(Base):\n    __tablename__ = \"pets\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    name: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    type: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    owner: Mapped[PeopleTable] = relationship(back_populates=\"pets\")\n    def __repr__(self):\n        return f\"Pets [name={self.name}], type={self.type}\"",
         "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepository",
+        "kind": 6,
+        "importPath": "src.models.sqlite.repositories.pets_repository",
+        "description": "src.models.sqlite.repositories.pets_repository",
+        "peekOfCode": "class PetsRepository:\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.__db_connection = db_connection\n    def list_pets(self) -> List[PetsTable]:\n        with self.__db_connection as database:\n            try:\n                pets = database.session.query(PetsTable).all()\n                return pets\n            except UnboundExecutionError as exc:\n                print(str(exc))",
+        "detail": "src.models.sqlite.repositories.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "MockConnection",
+        "kind": 6,
+        "importPath": "src.models.sqlite.repositories.pets_repository_test",
+        "description": "src.models.sqlite.repositories.pets_repository_test",
+        "peekOfCode": "class MockConnection(DBConnectionHandler):\n    def __init__(self) -> None:\n        super().__init__()\n        self.session = UnifiedAlchemyMagicMock(\n            data=[\n                (\n                    [mock.call.query(PetsTable)],\n                    [\n                        PetsTable(name=\"dog\", type=\"dog\"),\n                        PetsTable(name=\"cat\", type=\"cat\"),",
+        "detail": "src.models.sqlite.repositories.pets_repository_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_list_pets",
+        "kind": 2,
+        "importPath": "src.models.sqlite.repositories.pets_repository_test",
+        "description": "src.models.sqlite.repositories.pets_repository_test",
+        "peekOfCode": "def test_list_pets():\n    mock_connection = MockConnection()\n    repo = PetsRepository(mock_connection)\n    response = repo.list_pets()\n    mock_connection.session_mock.query.assert_called_once_with(PetsTable)\n    mock_connection.session_mock.all.assert_called_once()\n    mock_connection.session_mock.filter.assert_not_called()\n    assert response[0].name == \"dog\"",
+        "detail": "src.models.sqlite.repositories.pets_repository_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_list_pets",
+        "kind": 2,
+        "importPath": "src.models.sqlite.repositories.repository_test",
+        "description": "src.models.sqlite.repositories.repository_test",
+        "peekOfCode": "def test_list_pets():\n    repo = PetsRepository(db_connection_handler)\n    response = repo.list_pets()\n    print(response)\n@pytest.mark.skip(reason=\"Interação com o banco\")\ndef test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)",
+        "detail": "src.models.sqlite.repositories.repository_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_delete_pet",
+        "kind": 2,
+        "importPath": "src.models.sqlite.repositories.repository_test",
+        "description": "src.models.sqlite.repositories.repository_test",
+        "peekOfCode": "def test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)",
+        "detail": "src.models.sqlite.repositories.repository_test",
         "documentation": {}
     },
     {
@@ -208,7 +365,7 @@
         "kind": 6,
         "importPath": "src.models.sqlite.settings.connection",
         "description": "src.models.sqlite.settings.connection",
-        "peekOfCode": "class DBConnectionHandler:\n    def __init__(self) -> None:\n        self.__connection_string = \"sqlite:///storage.db\"\n        self.__engine = None\n    def connect_to_db(self):\n        self.__engine = create_engine(self.__connection_string)\n    @property\n    def engine(self) -> Engine | None:\n        return self.__engine\ndb_connection_handler = DBConnectionHandler()",
+        "peekOfCode": "class DBConnectionHandler(ConnectionHandlerInterface):\n    def __init__(self) -> None:\n        self.__connection_string = \"sqlite:///storage.db\"\n        self.__engine = None\n        self.__session = None\n    def connect_to_db(self):\n        self.__engine = create_engine(self.__connection_string)\n    @property\n    def engine(self) -> Engine | None:\n        return self.__engine",
         "detail": "src.models.sqlite.settings.connection",
         "documentation": {}
     },
@@ -222,12 +379,30 @@
         "documentation": {}
     },
     {
+        "label": "ConnectionHandlerInterface",
+        "kind": 6,
+        "importPath": "src.models.sqlite.settings.connection_handler_interface",
+        "description": "src.models.sqlite.settings.connection_handler_interface",
+        "peekOfCode": "class ConnectionHandlerInterface(ABC):\n    pass",
+        "detail": "src.models.sqlite.settings.connection_handler_interface",
+        "documentation": {}
+    },
+    {
         "label": "test_connect_to_db",
         "kind": 2,
         "importPath": "src.models.sqlite.settings.connection_test",
         "description": "src.models.sqlite.settings.connection_test",
         "peekOfCode": "def test_connect_to_db():\n    assert db_connection_handler.engine is None\n    db_connection_handler.connect_to_db()\n    db_engine = db_connection_handler.engine\n    assert db_engine is not None\n    assert isinstance(db_engine, Engine)",
         "detail": "src.models.sqlite.settings.connection_test",
+        "documentation": {}
+    },
+    {
+        "label": "AlgumaCoisa",
+        "kind": 6,
+        "importPath": "case",
+        "description": "case",
+        "peekOfCode": "class AlgumaCoisa:\n    def __enter__(self):\n        print(\"Estou entrando\")\n    def __exit__(self, exc_type, exc_val, exec_tb):\n        print(exc_type)\n        print(exc_val)\n        print(exec_tb)\n        print(\"Estou Saindo\")\nwith AlgumaCoisa() as something:\n    # raise Exception(\"Erro ocorreu\")",
+        "detail": "case",
         "documentation": {}
     }
 ]

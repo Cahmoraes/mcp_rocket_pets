@@ -9,6 +9,7 @@ identify==2.6.15
 iniconfig==2.1.0
 isort==7.0.0
 mccabe==0.7.0
+mock-alchemy==0.2.6
 nodeenv==1.9.1
 packaging==25.0
 platformdirs==4.5.0

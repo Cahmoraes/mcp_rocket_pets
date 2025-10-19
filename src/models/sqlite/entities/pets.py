@@ -1,8 +1,14 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
 from sqlalchemy import BIGINT, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from src.models.sqlite.entities.people import PeopleTable
 from src.models.sqlite.settings.base import Base
+
+if TYPE_CHECKING:
+    from src.models.sqlite.entities.people import PeopleTable
 
 
 class PetsTable(Base):

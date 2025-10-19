@@ -1,12 +1,14 @@
 from __future__ import annotations
 
-from typing import List
+from typing import TYPE_CHECKING, List
 
 from sqlalchemy import BIGINT, ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from src.models.sqlite.entities.pets import PetsTable
 from src.models.sqlite.settings.base import Base
+
+if TYPE_CHECKING:
+    from src.models.sqlite.entities import PetsTable
 
 
 class PeopleTable(Base):
@@ -16,7 +18,7 @@ class PeopleTable(Base):
     first_name: Mapped[str] = mapped_column(String, nullable=False)
     last_name: Mapped[str] = mapped_column(String, nullable=False)
     age: Mapped[int] = mapped_column(BIGINT, nullable=False)
-    pet_id: Mapped[PetsTable] = mapped_column(ForeignKey("pets.id"))
+    pet_id: Mapped[int] = mapped_column(ForeignKey("pets.id"))
 
     pets: Mapped[List[PetsTable]] = relationship(back_populates="owner")
 
