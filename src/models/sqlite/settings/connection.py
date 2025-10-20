@@ -1,6 +1,8 @@
 from sqlalchemy import Engine, create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
+from src.models.sqlite.settings.base import Base
+
 from . import ConnectionHandlerInterface
 
 
@@ -26,6 +28,10 @@ class DBConnectionHandler(ConnectionHandlerInterface):
     @session.setter
     def session(self, session: Session) -> None:
         self.__session = session
+
+    def recreate_db(self) -> None:
+        Base.metadata.drop_all(self.__engine)
+        Base.metadata.create_all(self.__engine)
 
     def __enter__(self):
         session_maker = sessionmaker()

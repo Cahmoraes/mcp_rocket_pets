@@ -32,22 +32,6 @@
         "documentation": {}
     },
     {
-        "label": "TYPE_CHECKING",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "cast",
         "importPath": "typing",
         "description": "typing",
@@ -152,14 +136,6 @@
         "documentation": {}
     },
     {
-        "label": "relationship",
-        "importPath": "sqlalchemy.orm",
-        "description": "sqlalchemy.orm",
-        "isExtraImport": true,
-        "detail": "sqlalchemy.orm",
-        "documentation": {}
-    },
-    {
         "label": "declarative_base",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
@@ -200,6 +176,22 @@
         "documentation": {}
     },
     {
+        "label": "Base",
+        "importPath": "src.models.sqlite.settings.base",
+        "description": "src.models.sqlite.settings.base",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "NoResultFound",
+        "importPath": "sqlalchemy.exc",
+        "description": "sqlalchemy.exc",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.exc",
+        "documentation": {}
+    },
+    {
         "label": "UnboundExecutionError",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -208,19 +200,43 @@
         "documentation": {}
     },
     {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities",
-        "description": "src.models.sqlite.entities",
+        "label": "PeopleTable",
+        "importPath": "src.models.sqlite.entities.people",
+        "description": "src.models.sqlite.entities.people",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities",
+        "detail": "src.models.sqlite.entities.people",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleTable",
+        "importPath": "src.models.sqlite.entities.people",
+        "description": "src.models.sqlite.entities.people",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.people",
         "documentation": {}
     },
     {
         "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities",
-        "description": "src.models.sqlite.entities",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities",
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
         "documentation": {}
     },
     {
@@ -245,6 +261,30 @@
         "description": "src.models.sqlite.settings.connection",
         "isExtraImport": true,
         "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities",
+        "description": "src.models.sqlite.entities",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities",
+        "description": "src.models.sqlite.entities",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities",
         "documentation": {}
     },
     {
@@ -273,14 +313,6 @@
         "documentation": {}
     },
     {
-        "label": "PetsRepository",
-        "importPath": "src.models.sqlite.repositories.pets_repository",
-        "description": "src.models.sqlite.repositories.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.repositories.pets_repository",
-        "documentation": {}
-    },
-    {
         "label": "ABC",
         "importPath": "abc",
         "description": "abc",
@@ -301,7 +333,7 @@
         "kind": 6,
         "importPath": "src.models.sqlite.entities.people",
         "description": "src.models.sqlite.entities.people",
-        "peekOfCode": "class PeopleTable(Base):\n    __tablename__ = \"people\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    first_name: Mapped[str] = mapped_column(String, nullable=False)\n    last_name: Mapped[str] = mapped_column(String, nullable=False)\n    age: Mapped[int] = mapped_column(BIGINT, nullable=False)\n    pet_id: Mapped[int] = mapped_column(ForeignKey(\"pets.id\"))\n    pets: Mapped[List[PetsTable]] = relationship(back_populates=\"owner\")\n    def __repr__(self):\n        return f\"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]\"",
+        "peekOfCode": "class PeopleTable(Base):\n    __tablename__ = \"people\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    first_name: Mapped[str] = mapped_column(String, nullable=False)\n    last_name: Mapped[str] = mapped_column(String, nullable=False)\n    age: Mapped[int] = mapped_column(BIGINT, nullable=False)\n    pet_id: Mapped[int] = mapped_column(ForeignKey(\"pets.id\"))\n    pet: Mapped[PetsTable] = relationship()\n    def __repr__(self):\n        return f\"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]\"",
         "detail": "src.models.sqlite.entities.people",
         "documentation": {}
     },
@@ -310,8 +342,17 @@
         "kind": 6,
         "importPath": "src.models.sqlite.entities.pets",
         "description": "src.models.sqlite.entities.pets",
-        "peekOfCode": "class PetsTable(Base):\n    __tablename__ = \"pets\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    name: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    type: Mapped[str] = mapped_column(String, nullable=False, unique=True)\n    owner: Mapped[PeopleTable] = relationship(back_populates=\"pets\")\n    def __repr__(self):\n        return f\"Pets [name={self.name}], type={self.type}\"",
+        "peekOfCode": "class PetsTable(Base):\n    __tablename__ = \"pets\"\n    id: Mapped[int] = mapped_column(BIGINT, primary_key=True)\n    name: Mapped[str] = mapped_column(String, nullable=False)\n    type: Mapped[str] = mapped_column(String, nullable=False)\n    def __repr__(self):\n        return f\"Pets [name={self.name}], type={self.type}\"",
         "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepository",
+        "kind": 6,
+        "importPath": "src.models.sqlite.repositories.people_repository",
+        "description": "src.models.sqlite.repositories.people_repository",
+        "peekOfCode": "class PeopleRepository:\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.db_connection = db_connection\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None:\n        with self.db_connection as database:\n            try:\n                person_data = PeopleTable(\n                    first_name=first_name, last_name=last_name, age=age, pet_id=pet_id",
+        "detail": "src.models.sqlite.repositories.people_repository",
         "documentation": {}
     },
     {
@@ -380,19 +421,37 @@
     {
         "label": "test_list_pets",
         "kind": 2,
-        "importPath": "src.models.sqlite.repositories.repository_test",
-        "description": "src.models.sqlite.repositories.repository_test",
-        "peekOfCode": "def test_list_pets():\n    repo = PetsRepository(db_connection_handler)\n    response = repo.list_pets()\n    print(response)\n@pytest.mark.skip(reason=\"Interação com o banco\")\ndef test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)",
-        "detail": "src.models.sqlite.repositories.repository_test",
+        "importPath": "src.models.sqlite.repositories.repositories_test",
+        "description": "src.models.sqlite.repositories.repositories_test",
+        "peekOfCode": "def test_list_pets():\n    repo = PetsRepository(db_connection_handler)\n    response = repo.list_pets()\n    print(response)\n@pytest.mark.skip(reason=\"Interação com o banco\")\ndef test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)\n@pytest.mark.skip(reason=\"Interação com o banco\")",
+        "detail": "src.models.sqlite.repositories.repositories_test",
         "documentation": {}
     },
     {
         "label": "test_delete_pet",
         "kind": 2,
-        "importPath": "src.models.sqlite.repositories.repository_test",
-        "description": "src.models.sqlite.repositories.repository_test",
-        "peekOfCode": "def test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)",
-        "detail": "src.models.sqlite.repositories.repository_test",
+        "importPath": "src.models.sqlite.repositories.repositories_test",
+        "description": "src.models.sqlite.repositories.repositories_test",
+        "peekOfCode": "def test_delete_pet():\n    name = \"belinha\"\n    repo = PetsRepository(db_connection_handler)\n    repo.delete_pet(name)\n@pytest.mark.skip(reason=\"Interação com o banco\")\ndef test_insert_person():\n    first_name = \"test name\"\n    last_name = \"test last\"\n    age = 77\n    pet_id = 2",
+        "detail": "src.models.sqlite.repositories.repositories_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_insert_person",
+        "kind": 2,
+        "importPath": "src.models.sqlite.repositories.repositories_test",
+        "description": "src.models.sqlite.repositories.repositories_test",
+        "peekOfCode": "def test_insert_person():\n    first_name = \"test name\"\n    last_name = \"test last\"\n    age = 77\n    pet_id = 2\n    repo = PeopleRepository(db_connection_handler)\n    repo.insert_person(first_name, last_name, age, pet_id)\n@pytest.mark.skip(reason=\"Interação com o banco\")\ndef test_get_person():\n    person_id = 1",
+        "detail": "src.models.sqlite.repositories.repositories_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_get_person",
+        "kind": 2,
+        "importPath": "src.models.sqlite.repositories.repositories_test",
+        "description": "src.models.sqlite.repositories.repositories_test",
+        "peekOfCode": "def test_get_person():\n    person_id = 1\n    repo = PeopleRepository(db_connection_handler)\n    response = repo.get_person(person_id)\n    print()\n    print(response)",
+        "detail": "src.models.sqlite.repositories.repositories_test",
         "documentation": {}
     },
     {

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, List
+from typing import TYPE_CHECKING
 
 from sqlalchemy import BIGINT, ForeignKey, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
@@ -20,7 +20,7 @@ class PeopleTable(Base):
     age: Mapped[int] = mapped_column(BIGINT, nullable=False)
     pet_id: Mapped[int] = mapped_column(ForeignKey("pets.id"))
 
-    pets: Mapped[List[PetsTable]] = relationship(back_populates="owner")
+    pet: Mapped[PetsTable] = relationship()
 
     def __repr__(self):
         return f"People [name={self.first_name}, lastname={self.last_name}, pet_id={self.pet_id}]"
