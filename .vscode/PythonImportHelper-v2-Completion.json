@@ -370,6 +370,398 @@
         "documentation": {}
     },
     {
+        "label": "PersonCreatorController",
+        "importPath": "src.controllers.person_creator_controller",
+        "description": "src.controllers.person_creator_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.person_creator_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepository",
+        "importPath": "src.models.sqlite.repositories.people_repository",
+        "description": "src.models.sqlite.repositories.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.repositories.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepository",
+        "importPath": "src.models.sqlite.repositories.people_repository",
+        "description": "src.models.sqlite.repositories.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.repositories.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "DBConnectionHandler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "db_connection_handler",
+        "importPath": "src.models.sqlite.settings.connection",
+        "description": "src.models.sqlite.settings.connection",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.settings.connection",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorView",
+        "importPath": "src.views.person_creator_view",
+        "description": "src.views.person_creator_view",
+        "isExtraImport": true,
+        "detail": "src.views.person_creator_view",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderController",
+        "importPath": "src.controllers.person_finder_controller",
+        "description": "src.controllers.person_finder_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.person_finder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderView",
+        "importPath": "src.views.person_finder_view",
+        "description": "src.views.person_finder_view",
+        "isExtraImport": true,
+        "detail": "src.views.person_finder_view",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterController",
+        "importPath": "src.controllers.pet_deleter_controller",
+        "description": "src.controllers.pet_deleter_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.pet_deleter_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepository",
+        "importPath": "src.models.sqlite.repositories.pets_repository",
+        "description": "src.models.sqlite.repositories.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.repositories.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepository",
+        "importPath": "src.models.sqlite.repositories.pets_repository",
+        "description": "src.models.sqlite.repositories.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.repositories.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterView",
+        "importPath": "src.views.pet_deleter_view",
+        "description": "src.views.pet_deleter_view",
+        "isExtraImport": true,
+        "detail": "src.views.pet_deleter_view",
+        "documentation": {}
+    },
+    {
+        "label": "PetListController",
+        "importPath": "src.controllers.pet_lister_controller",
+        "description": "src.controllers.pet_lister_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.pet_lister_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PetListerView",
+        "importPath": "src.views.pet_lister_view",
+        "description": "src.views.pet_lister_view",
+        "isExtraImport": true,
+        "detail": "src.views.pet_lister_view",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Blueprint",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "person_creator_composer",
+        "importPath": "src.main.composer.person_creator_composer",
+        "description": "src.main.composer.person_creator_composer",
+        "isExtraImport": true,
+        "detail": "src.main.composer.person_creator_composer",
+        "documentation": {}
+    },
+    {
+        "label": "person_finder_composer",
+        "importPath": "src.main.composer.person_finder_composer",
+        "description": "src.main.composer.person_finder_composer",
+        "isExtraImport": true,
+        "detail": "src.main.composer.person_finder_composer",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "pet_deleter_composer",
+        "importPath": "src.main.composer.pet_deleter_composer",
+        "description": "src.main.composer.pet_deleter_composer",
+        "isExtraImport": true,
+        "detail": "src.main.composer.pet_deleter_composer",
+        "documentation": {}
+    },
+    {
+        "label": "pet_lister_composer",
+        "importPath": "src.main.composer.pet_lister_composer",
+        "description": "src.main.composer.pet_lister_composer",
+        "isExtraImport": true,
+        "detail": "src.main.composer.pet_lister_composer",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types.http_request",
+        "description": "src.views.http_types.http_request",
+        "isExtraImport": true,
+        "detail": "src.views.http_types.http_request",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "person_route_pb",
+        "importPath": "src.main.routes.person_routes",
+        "description": "src.main.routes.person_routes",
+        "isExtraImport": true,
+        "detail": "src.main.routes.person_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pet_route_pb",
+        "importPath": "src.main.routes.pets_routes",
+        "description": "src.main.routes.pets_routes",
+        "isExtraImport": true,
+        "detail": "src.main.routes.pets_routes",
+        "documentation": {}
+    },
+    {
         "label": "annotations",
         "importPath": "__future__",
         "description": "__future__",
@@ -562,46 +954,6 @@
         "documentation": {}
     },
     {
-        "label": "DBConnectionHandler",
-        "importPath": "src.models.sqlite.settings.connection",
-        "description": "src.models.sqlite.settings.connection",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.connection",
-        "documentation": {}
-    },
-    {
-        "label": "DBConnectionHandler",
-        "importPath": "src.models.sqlite.settings.connection",
-        "description": "src.models.sqlite.settings.connection",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.connection",
-        "documentation": {}
-    },
-    {
-        "label": "DBConnectionHandler",
-        "importPath": "src.models.sqlite.settings.connection",
-        "description": "src.models.sqlite.settings.connection",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.connection",
-        "documentation": {}
-    },
-    {
-        "label": "db_connection_handler",
-        "importPath": "src.models.sqlite.settings.connection",
-        "description": "src.models.sqlite.settings.connection",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.connection",
-        "documentation": {}
-    },
-    {
-        "label": "db_connection_handler",
-        "importPath": "src.models.sqlite.settings.connection",
-        "description": "src.models.sqlite.settings.connection",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.settings.connection",
-        "documentation": {}
-    },
-    {
         "label": "PetsTable",
         "importPath": "src.models.sqlite.entities",
         "description": "src.models.sqlite.entities",
@@ -642,86 +994,6 @@
         "documentation": {}
     },
     {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
         "label": "PersonCreatorControllerInterface",
         "importPath": "src.controllers.interfaces",
         "description": "src.controllers.interfaces",
@@ -739,6 +1011,14 @@
     },
     {
         "label": "PersonFinderControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
         "importPath": "src.controllers.interfaces",
         "description": "src.controllers.interfaces",
         "isExtraImport": true,
@@ -783,6 +1063,22 @@
         "description": "src.views.interfaces.view_interface",
         "isExtraImport": true,
         "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "isExtraImport": true,
+        "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "src.main.server.server",
+        "description": "src.main.server.server",
+        "isExtraImport": true,
+        "detail": "src.main.server.server",
         "documentation": {}
     },
     {
@@ -936,6 +1232,105 @@
         "description": "src.controllers.pet_lister_controller_test",
         "peekOfCode": "def test_list_pets():\n    controller = PetListController(MockPetsRepository())\n    response = controller.list()\n    expected_response = {\n        \"data\": {\n            \"type\": \"Pets\",\n            \"count\": 2,\n            \"attributes\": [{\"name\": \"Fluffy\", \"id\": 4}, {\"name\": \"Buddy\", \"id\": 47}],\n        }\n    }",
         "detail": "src.controllers.pet_lister_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "person_creator_composer",
+        "kind": 2,
+        "importPath": "src.main.composer.person_creator_composer",
+        "description": "src.main.composer.person_creator_composer",
+        "peekOfCode": "def person_creator_composer():\n    model = PeopleRepository(db_connection_handler)\n    controller = PersonCreatorController(model)\n    return PersonCreatorView(controller)",
+        "detail": "src.main.composer.person_creator_composer",
+        "documentation": {}
+    },
+    {
+        "label": "person_finder_composer",
+        "kind": 2,
+        "importPath": "src.main.composer.person_finder_composer",
+        "description": "src.main.composer.person_finder_composer",
+        "peekOfCode": "def person_finder_composer():\n    model = PeopleRepository(db_connection_handler)\n    controller = PersonFinderController(model)\n    return PersonFinderView(controller)",
+        "detail": "src.main.composer.person_finder_composer",
+        "documentation": {}
+    },
+    {
+        "label": "pet_deleter_composer",
+        "kind": 2,
+        "importPath": "src.main.composer.pet_deleter_composer",
+        "description": "src.main.composer.pet_deleter_composer",
+        "peekOfCode": "def pet_deleter_composer():\n    model = PetsRepository(db_connection_handler)\n    controller = PetDeleterController(model)\n    return PetDeleterView(controller)",
+        "detail": "src.main.composer.pet_deleter_composer",
+        "documentation": {}
+    },
+    {
+        "label": "pet_lister_composer",
+        "kind": 2,
+        "importPath": "src.main.composer.pet_lister_composer",
+        "description": "src.main.composer.pet_lister_composer",
+        "peekOfCode": "def pet_lister_composer():\n    model = PetsRepository(db_connection_handler)\n    controller = PetListController(model)\n    return PetListerView(controller)",
+        "detail": "src.main.composer.pet_lister_composer",
+        "documentation": {}
+    },
+    {
+        "label": "create_person",
+        "kind": 2,
+        "importPath": "src.main.routes.person_routes",
+        "description": "src.main.routes.person_routes",
+        "peekOfCode": "def create_person():\n    http_request = HttpRequest(request.json)\n    view = person_creator_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@person_route_pb.route(\"/people/<int:person_id>\", methods=[\"GET\"])\ndef find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})\n    view = person_finder_composer()\n    http_response = view.handle(http_request)",
+        "detail": "src.main.routes.person_routes",
+        "documentation": {}
+    },
+    {
+        "label": "find_person",
+        "kind": 2,
+        "importPath": "src.main.routes.person_routes",
+        "description": "src.main.routes.person_routes",
+        "peekOfCode": "def find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})\n    view = person_finder_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code",
+        "detail": "src.main.routes.person_routes",
+        "documentation": {}
+    },
+    {
+        "label": "person_route_pb",
+        "kind": 5,
+        "importPath": "src.main.routes.person_routes",
+        "description": "src.main.routes.person_routes",
+        "peekOfCode": "person_route_pb = Blueprint(\"person_routes\", __name__)\n@person_route_pb.route(\"/person\", methods=[\"POST\"])\ndef create_person():\n    http_request = HttpRequest(request.json)\n    view = person_creator_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@person_route_pb.route(\"/people/<int:person_id>\", methods=[\"GET\"])\ndef find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})",
+        "detail": "src.main.routes.person_routes",
+        "documentation": {}
+    },
+    {
+        "label": "list_pets",
+        "kind": 2,
+        "importPath": "src.main.routes.pets_routes",
+        "description": "src.main.routes.pets_routes",
+        "peekOfCode": "def list_pets():\n    http_request = HttpRequest()\n    view = pet_lister_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@pet_route_pb.route(\"/pets/<name>\", methods=[\"DELETE\"])\ndef delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})\n    view = pet_deleter_composer()\n    http_response = view.handle(http_request)",
+        "detail": "src.main.routes.pets_routes",
+        "documentation": {}
+    },
+    {
+        "label": "delete_pets",
+        "kind": 2,
+        "importPath": "src.main.routes.pets_routes",
+        "description": "src.main.routes.pets_routes",
+        "peekOfCode": "def delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})\n    view = pet_deleter_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code",
+        "detail": "src.main.routes.pets_routes",
+        "documentation": {}
+    },
+    {
+        "label": "pet_route_pb",
+        "kind": 5,
+        "importPath": "src.main.routes.pets_routes",
+        "description": "src.main.routes.pets_routes",
+        "peekOfCode": "pet_route_pb = Blueprint(\"pets_routes\", __name__)\n@pet_route_pb.route(\"/pets\", methods=[\"GET\"])\ndef list_pets():\n    http_request = HttpRequest()\n    view = pet_lister_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@pet_route_pb.route(\"/pets/<name>\", methods=[\"DELETE\"])\ndef delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})",
+        "detail": "src.main.routes.pets_routes",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "src.main.server.server",
+        "description": "src.main.server.server",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\napp.register_blueprint(pet_route_pb)\napp.register_blueprint(person_route_pb)",
+        "detail": "src.main.server.server",
         "documentation": {}
     },
     {
@@ -1177,8 +1572,17 @@
         "kind": 6,
         "importPath": "src.views.person_finder_view",
         "description": "src.views.person_finder_view",
-        "peekOfCode": "class PersonFinderView(ViewInterface):\n    def __init__(self, controller: PersonFinderControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        person_id = http_request.body\n        if not person_id or not isinstance(person_id, int):\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.find(person_id)\n        return HttpResponse(status_code=200, body=body_response)",
+        "peekOfCode": "class PersonFinderView(ViewInterface):\n    def __init__(self, controller: PersonFinderControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        if not http_request.param:\n            raise Exception(\"Parâmetro inválido\")\n        person_id = http_request.param.get(\"person_id\")\n        if not person_id or not isinstance(person_id, int):\n            raise Exception(\"Parâmetro inválido\")\n        body_response = self.__controller.find(person_id)",
         "detail": "src.views.person_finder_view",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterView",
+        "kind": 6,
+        "importPath": "src.views.pet_deleter_view",
+        "description": "src.views.pet_deleter_view",
+        "peekOfCode": "class PetDeleterView(ViewInterface):\n    def __init__(self, controller: PetDeleterControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        if not http_request.param:\n            raise Exception(\"Parâmetro inválido\")\n        name = http_request.param[\"name\"]\n        body_response = self.__controller.delete(name)\n        return HttpResponse(status_code=204, body=body_response)",
+        "detail": "src.views.pet_deleter_view",
         "documentation": {}
     },
     {

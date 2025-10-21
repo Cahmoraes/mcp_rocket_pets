@@ -8,8 +8,11 @@ class PersonFinderView(ViewInterface):
         self.__controller = controller
 
     def handle(self, http_request: HttpRequest) -> HttpResponse:
-        person_id = http_request.body
+        if not http_request.param:
+            raise Exception("Parâmetro inválido")
+
+        person_id = http_request.param.get("person_id")
         if not person_id or not isinstance(person_id, int):
-            raise Exception("Body inválido")
+            raise Exception("Parâmetro inválido")
         body_response = self.__controller.find(person_id)
         return HttpResponse(status_code=200, body=body_response)

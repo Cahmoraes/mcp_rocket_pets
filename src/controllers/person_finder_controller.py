@@ -20,16 +20,16 @@ class PersonFinderController(PersonFinderControllerInterface):
             raise Exception("Pessoa não encontrada")
         return person
 
-    def __format_response(self, person_info: dict) -> dict:
+    def __format_response(self, person_info: Any) -> dict:
         return {
             "data": {
                 "type": "Person",
                 "count": 1,
                 "attributes": {
-                    "first_name": person_info["first_name"],
-                    "last_name": person_info["last_name"],
-                    "pet_name": person_info["pet_name"],
-                    "pet_type": person_info["pet_type"],
+                    "first_name": person_info[0],
+                    "last_name": person_info[1],
+                    "pet_name": person_info[2],
+                    "pet_type": person_info[3],
                 },
             }
         }
