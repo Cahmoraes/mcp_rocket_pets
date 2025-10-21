@@ -33,7 +33,47 @@
         "documentation": {}
     },
     {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
         "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "TypedDict",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -459,6 +499,42 @@
         "description": "src.controllers.person_creator_controller_test",
         "peekOfCode": "def test_create_error():\n    person_info = {\n        \"first_name\": \"Fulano123\",\n        \"last_name\": \"de Tal\",\n        \"age\": 30,\n        \"pet_id\": 123,\n    }\n    controller = PersonCreatorController(MockPeopleRepository())\n    with pytest.raises(Exception) as exc:\n        controller.create(person_info)",
         "detail": "src.controllers.person_creator_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderController",
+        "kind": 6,
+        "importPath": "src.controllers.person_finder_controller",
+        "description": "src.controllers.person_finder_controller",
+        "peekOfCode": "class PersonFinderController:\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def find(self, person_id: int) -> dict:\n        person = self.__find_person_in_db(person_id)\n        return self.__format_response(person)\n    def __find_person_in_db(self, person_id: int) -> Any:\n        person = self.__people_repository.get_person(person_id)\n        if not person:\n            raise Exception(\"Pessoa não encontrada\")",
+        "detail": "src.controllers.person_finder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "MockPerson",
+        "kind": 6,
+        "importPath": "src.controllers.person_finder_controller_test",
+        "description": "src.controllers.person_finder_controller_test",
+        "peekOfCode": "class MockPerson(TypedDict):\n    first_name: str\n    last_name: str\n    pet_name: str\n    pet_type: str\nclass MockRepository(PeopleRepositoryInterface):\n    def get_person(self, person_id: int) -> Any:\n        return MockPerson(\n            first_name=\"John\", last_name=\"Doe\", pet_name=\"Fluffy\", pet_type=\"cat\"\n        )",
+        "detail": "src.controllers.person_finder_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "MockRepository",
+        "kind": 6,
+        "importPath": "src.controllers.person_finder_controller_test",
+        "description": "src.controllers.person_finder_controller_test",
+        "peekOfCode": "class MockRepository(PeopleRepositoryInterface):\n    def get_person(self, person_id: int) -> Any:\n        return MockPerson(\n            first_name=\"John\", last_name=\"Doe\", pet_name=\"Fluffy\", pet_type=\"cat\"\n        )\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None:\n        return\ndef test_find():",
+        "detail": "src.controllers.person_finder_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_find",
+        "kind": 2,
+        "importPath": "src.controllers.person_finder_controller_test",
+        "description": "src.controllers.person_finder_controller_test",
+        "peekOfCode": "def test_find():\n    controller = PersonFinderController(MockRepository())\n    response = controller.find(person_id=123)\n    expected_response = {\n        \"data\": {\n            \"type\": \"Person\",\n            \"count\": 1,\n            \"attributes\": {\n                \"first_name\": \"John\",\n                \"last_name\": \"Doe\",",
+        "detail": "src.controllers.person_finder_controller_test",
         "documentation": {}
     },
     {
