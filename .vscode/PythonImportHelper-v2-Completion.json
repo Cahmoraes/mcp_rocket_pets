@@ -81,6 +81,14 @@
         "documentation": {}
     },
     {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "TYPE_CHECKING",
         "importPath": "typing",
         "description": "typing",
@@ -119,6 +127,70 @@
         "importPath": "pytest",
         "description": "pytest",
         "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
@@ -322,30 +394,6 @@
         "documentation": {}
     },
     {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
         "label": "NoResultFound",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -431,14 +479,6 @@
         "description": "src.models.sqlite.entities",
         "isExtraImport": true,
         "detail": "src.models.sqlite.entities",
-        "documentation": {}
-    },
-    {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
@@ -535,6 +575,33 @@
         "description": "src.controllers.person_finder_controller_test",
         "peekOfCode": "def test_find():\n    controller = PersonFinderController(MockRepository())\n    response = controller.find(person_id=123)\n    expected_response = {\n        \"data\": {\n            \"type\": \"Person\",\n            \"count\": 1,\n            \"attributes\": {\n                \"first_name\": \"John\",\n                \"last_name\": \"Doe\",",
         "detail": "src.controllers.person_finder_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "PetListController",
+        "kind": 6,
+        "importPath": "src.controllers.pet_lister_controller",
+        "description": "src.controllers.pet_lister_controller",
+        "peekOfCode": "class PetListController:\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def list(self) -> dict:\n        pets = self.__pets_in_db()\n        return self.__format_response(pets)\n    def __pets_in_db(self) -> List[PetsTable]:\n        return self.__pet_repository.list_pets()\n    def __format_response(self, pets: List[PetsTable]) -> dict:\n        formatted_pets = []",
+        "detail": "src.controllers.pet_lister_controller",
+        "documentation": {}
+    },
+    {
+        "label": "MockPetsRepository",
+        "kind": 6,
+        "importPath": "src.controllers.pet_lister_controller_test",
+        "description": "src.controllers.pet_lister_controller_test",
+        "peekOfCode": "class MockPetsRepository(PetsRepositoryInterface):\n    def list_pets(self) -> list[PetsTable]:\n        return [\n            PetsTable(name=\"Fluffy\", type=\"Cat\", id=4),\n            PetsTable(name=\"Buddy\", type=\"Dog\", id=47),\n        ]\n    def delete_pet(self, name: str) -> None: ...\ndef test_list_pets():\n    controller = PetListController(MockPetsRepository())\n    response = controller.list()",
+        "detail": "src.controllers.pet_lister_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_list_pets",
+        "kind": 2,
+        "importPath": "src.controllers.pet_lister_controller_test",
+        "description": "src.controllers.pet_lister_controller_test",
+        "peekOfCode": "def test_list_pets():\n    controller = PetListController(MockPetsRepository())\n    response = controller.list()\n    expected_response = {\n        \"data\": {\n            \"type\": \"Pets\",\n            \"count\": 2,\n            \"attributes\": [{\"name\": \"Fluffy\", \"id\": 4}, {\"name\": \"Buddy\", \"id\": 47}],\n        }\n    }",
+        "detail": "src.controllers.pet_lister_controller_test",
         "documentation": {}
     },
     {
