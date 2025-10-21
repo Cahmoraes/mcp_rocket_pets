@@ -104,6 +104,22 @@
         "documentation": {}
     },
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -626,6 +642,22 @@
         "documentation": {}
     },
     {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
         "label": "PersonCreatorControllerInterface",
         "kind": 6,
         "importPath": "src.controllers.interfaces.person_creator_controller",
@@ -965,6 +997,33 @@
         "description": "src.models.sqlite.settings.connection_test",
         "peekOfCode": "def test_connect_to_db():\n    assert db_connection_handler.engine is None\n    db_connection_handler.connect_to_db()\n    db_engine = db_connection_handler.engine\n    assert db_engine is not None\n    assert isinstance(db_engine, Engine)",
         "detail": "src.models.sqlite.settings.connection_test",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "kind": 6,
+        "importPath": "src.views.http_types.http_request",
+        "description": "src.views.http_types.http_request",
+        "peekOfCode": "class HttpRequest:\n    def __init__(self, body: Body = None, param: Param = None) -> None:\n        self.body = body\n        self.param = param",
+        "detail": "src.views.http_types.http_request",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "kind": 6,
+        "importPath": "src.views.http_types.http_response",
+        "description": "src.views.http_types.http_response",
+        "peekOfCode": "class HttpResponse:\n    def __init__(self, status_code: int, body: Body = None) -> None:\n        self.status_code = status_code\n        self.body = body",
+        "detail": "src.views.http_types.http_response",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "kind": 6,
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "peekOfCode": "class ViewInterface(ABC):\n    @abstractmethod\n    def handle(self, http_request: HttpRequest) -> HttpResponse: ...",
+        "detail": "src.views.interfaces.view_interface",
         "documentation": {}
     },
     {
