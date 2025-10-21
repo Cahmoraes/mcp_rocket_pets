@@ -137,6 +137,14 @@
         "documentation": {}
     },
     {
+        "label": "PersonCreatorControllerInterface",
+        "importPath": "src.controllers.interfaces.person_creator_controller",
+        "description": "src.controllers.interfaces.person_creator_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces.person_creator_controller",
+        "documentation": {}
+    },
+    {
         "label": "PeopleRepositoryInterface",
         "importPath": "src.models.sqlite.interfaces.people_repository",
         "description": "src.models.sqlite.interfaces.people_repository",
@@ -658,6 +666,30 @@
         "documentation": {}
     },
     {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "isExtraImport": true,
+        "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
         "label": "PersonCreatorControllerInterface",
         "kind": 6,
         "importPath": "src.controllers.interfaces.person_creator_controller",
@@ -1024,6 +1056,15 @@
         "description": "src.views.interfaces.view_interface",
         "peekOfCode": "class ViewInterface(ABC):\n    @abstractmethod\n    def handle(self, http_request: HttpRequest) -> HttpResponse: ...",
         "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorView",
+        "kind": 6,
+        "importPath": "src.views.person_creator_view",
+        "description": "src.views.person_creator_view",
+        "peekOfCode": "class PersonCreatorView(ViewInterface):\n    def __init__(self, controller: PersonCreatorControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        person_info = http_request.body\n        if not person_info:\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.create(person_info)\n        return HttpResponse(status_code=201, body=body_response)",
+        "detail": "src.views.person_creator_view",
         "documentation": {}
     },
     {
