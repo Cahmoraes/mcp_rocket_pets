@@ -1,22 +1,55 @@
 [
     {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
+        "label": "re",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "__future__",
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
         "documentation": {}
     },
     {
-        "label": "annotations",
-        "importPath": "__future__",
-        "description": "__future__",
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
         "isExtraImport": true,
-        "detail": "__future__",
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
         "documentation": {}
     },
     {
         "label": "TYPE_CHECKING",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -37,6 +70,31 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
         "documentation": {}
     },
     {
@@ -184,6 +242,70 @@
         "documentation": {}
     },
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
         "label": "NoResultFound",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -216,22 +338,6 @@
         "documentation": {}
     },
     {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
         "label": "DBConnectionHandler",
         "importPath": "src.models.sqlite.settings.connection",
         "description": "src.models.sqlite.settings.connection",
@@ -285,6 +391,14 @@
         "description": "src.models.sqlite.entities",
         "isExtraImport": true,
         "detail": "src.models.sqlite.entities",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
@@ -296,15 +410,6 @@
         "documentation": {}
     },
     {
-        "label": "pytest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pytest",
-        "description": "pytest",
-        "detail": "pytest",
-        "documentation": {}
-    },
-    {
         "label": "UnifiedAlchemyMagicMock",
         "importPath": "mock_alchemy.mocking",
         "description": "mock_alchemy.mocking",
@@ -313,19 +418,47 @@
         "documentation": {}
     },
     {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
         "label": "Engine",
         "importPath": "sqlalchemy.engine",
         "description": "sqlalchemy.engine",
         "isExtraImport": true,
         "detail": "sqlalchemy.engine",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorController",
+        "kind": 6,
+        "importPath": "src.controllers.person_creator_controller",
+        "description": "src.controllers.person_creator_controller",
+        "peekOfCode": "class PersonCreatorController:\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def create(self, person_info: dict) -> dict:\n        first_name = person_info[\"first_name\"]\n        last_name = person_info[\"last_name\"]\n        age = person_info[\"age\"]\n        pet_id = person_info[\"pet_id\"]\n        self.__validate_first_and_last_name(first_name, last_name)\n        self.__insert_person_in_db(first_name, last_name, age, pet_id)",
+        "detail": "src.controllers.person_creator_controller",
+        "documentation": {}
+    },
+    {
+        "label": "MockPeopleRepository",
+        "kind": 6,
+        "importPath": "src.controllers.person_creator_controller_test",
+        "description": "src.controllers.person_creator_controller_test",
+        "peekOfCode": "class MockPeopleRepository(PeopleRepositoryInterface):\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None:\n        pass\n    def get_person(self, person_id: int) -> Any:\n        return None\ndef test_create():\n    person_info = {\n        \"first_name\": \"Fulano\",",
+        "detail": "src.controllers.person_creator_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_create",
+        "kind": 2,
+        "importPath": "src.controllers.person_creator_controller_test",
+        "description": "src.controllers.person_creator_controller_test",
+        "peekOfCode": "def test_create():\n    person_info = {\n        \"first_name\": \"Fulano\",\n        \"last_name\": \"de Tal\",\n        \"age\": 30,\n        \"pet_id\": 123,\n    }\n    controller = PersonCreatorController(MockPeopleRepository())\n    response = controller.create(person_info)\n    assert response[\"data\"][\"type\"] == \"Person\"",
+        "detail": "src.controllers.person_creator_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "test_create_error",
+        "kind": 2,
+        "importPath": "src.controllers.person_creator_controller_test",
+        "description": "src.controllers.person_creator_controller_test",
+        "peekOfCode": "def test_create_error():\n    person_info = {\n        \"first_name\": \"Fulano123\",\n        \"last_name\": \"de Tal\",\n        \"age\": 30,\n        \"pet_id\": 123,\n    }\n    controller = PersonCreatorController(MockPeopleRepository())\n    with pytest.raises(Exception) as exc:\n        controller.create(person_info)",
+        "detail": "src.controllers.person_creator_controller_test",
         "documentation": {}
     },
     {
@@ -347,11 +480,29 @@
         "documentation": {}
     },
     {
+        "label": "PeopleRepositoryInterface",
+        "kind": 6,
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "peekOfCode": "class PeopleRepositoryInterface(ABC):\n    @abstractmethod\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None: ...\n    @abstractmethod\n    def get_person(self, person_id: int) -> Any: ...",
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "kind": 6,
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "peekOfCode": "class PetsRepositoryInterface(ABC):\n    @abstractmethod\n    def list_pets(self) -> list[PetsTable]: ...\n    @abstractmethod\n    def delete_pet(self, name: str) -> None: ...",
+        "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
         "label": "PeopleRepository",
         "kind": 6,
         "importPath": "src.models.sqlite.repositories.people_repository",
         "description": "src.models.sqlite.repositories.people_repository",
-        "peekOfCode": "class PeopleRepository:\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.db_connection = db_connection\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None:\n        with self.db_connection as database:\n            try:\n                person_data = PeopleTable(\n                    first_name=first_name, last_name=last_name, age=age, pet_id=pet_id",
+        "peekOfCode": "class PeopleRepository(PeopleRepositoryInterface):\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.db_connection = db_connection\n    def insert_person(\n        self, first_name: str, last_name: str, age: int, pet_id: int\n    ) -> None:\n        with self.db_connection as database:\n            try:\n                person_data = PeopleTable(\n                    first_name=first_name, last_name=last_name, age=age, pet_id=pet_id",
         "detail": "src.models.sqlite.repositories.people_repository",
         "documentation": {}
     },
@@ -360,7 +511,7 @@
         "kind": 6,
         "importPath": "src.models.sqlite.repositories.pets_repository",
         "description": "src.models.sqlite.repositories.pets_repository",
-        "peekOfCode": "class PetsRepository:\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.__db_connection = db_connection\n    def list_pets(self) -> List[PetsTable]:\n        with self.__db_connection as database:\n            try:\n                pets = database.session.query(PetsTable).all()\n                return pets\n            except UnboundExecutionError as exc:\n                print(str(exc))",
+        "peekOfCode": "class PetsRepository(PetsRepositoryInterface):\n    def __init__(self, db_connection: DBConnectionHandler) -> None:\n        self.__db_connection = db_connection\n    def list_pets(self) -> List[PetsTable]:\n        with self.__db_connection as database:\n            try:\n                pets = database.session.query(PetsTable).all()\n                return pets\n            except UnboundExecutionError as exc:\n                print(str(exc))",
         "detail": "src.models.sqlite.repositories.pets_repository",
         "documentation": {}
     },
