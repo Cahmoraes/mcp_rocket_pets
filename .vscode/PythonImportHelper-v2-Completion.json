@@ -130,43 +130,19 @@
         "documentation": {}
     },
     {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
+        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
-        "documentation": {}
-    },
-    {
-        "label": "PetsTable",
-        "importPath": "src.models.sqlite.entities.pets",
-        "description": "src.models.sqlite.entities.pets",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.entities.pets",
+        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
@@ -191,6 +167,54 @@
         "description": "src.models.sqlite.interfaces.pets_repository",
         "isExtraImport": true,
         "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "Mock",
+        "importPath": "unittest.mock",
+        "description": "unittest.mock",
+        "isExtraImport": true,
+        "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
+        "documentation": {}
+    },
+    {
+        "label": "PetsTable",
+        "importPath": "src.models.sqlite.entities.pets",
+        "description": "src.models.sqlite.entities.pets",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.entities.pets",
         "documentation": {}
     },
     {
@@ -575,6 +599,24 @@
         "description": "src.controllers.person_finder_controller_test",
         "peekOfCode": "def test_find():\n    controller = PersonFinderController(MockRepository())\n    response = controller.find(person_id=123)\n    expected_response = {\n        \"data\": {\n            \"type\": \"Person\",\n            \"count\": 1,\n            \"attributes\": {\n                \"first_name\": \"John\",\n                \"last_name\": \"Doe\",",
         "detail": "src.controllers.person_finder_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterController",
+        "kind": 6,
+        "importPath": "src.controllers.pet_deleter_controller",
+        "description": "src.controllers.pet_deleter_controller",
+        "peekOfCode": "class PetDeleterController:\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def delete(self, name: str) -> None:\n        self.__pet_repository.delete_pet(name)",
+        "detail": "src.controllers.pet_deleter_controller",
+        "documentation": {}
+    },
+    {
+        "label": "test_delete_pet",
+        "kind": 2,
+        "importPath": "src.controllers.pet_deleter_controller_test",
+        "description": "src.controllers.pet_deleter_controller_test",
+        "peekOfCode": "def test_delete_pet():\n    mock_repository: PetsRepositoryInterface = Mock(spec=PetsRepositoryInterface)\n    controller = PetDeleterController(mock_repository)\n    controller.delete(\"amiguinho\")\n    mock_repository.delete_pet.assert_called_once_with(\"amiguinho\")",
+        "detail": "src.controllers.pet_deleter_controller_test",
         "documentation": {}
     },
     {
