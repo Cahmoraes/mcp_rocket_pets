@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
 
-class PetListControllerInterface(ABC):
+class PetListerControllerInterface(ABC):
     @abstractmethod
     def list(self) -> dict: ...

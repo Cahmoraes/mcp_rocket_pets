@@ -1,6 +1,4 @@
-from src.controllers.interfaces.person_creator_controller import (
-    PersonCreatorControllerInterface,
-)
+from src.controllers.interfaces import PersonCreatorControllerInterface
 from src.views.http_types import HttpRequest, HttpResponse
 from src.views.interfaces.view_interface import ViewInterface
 

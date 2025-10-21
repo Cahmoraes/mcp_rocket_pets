@@ -137,14 +137,6 @@
         "documentation": {}
     },
     {
-        "label": "PersonCreatorControllerInterface",
-        "importPath": "src.controllers.interfaces.person_creator_controller",
-        "description": "src.controllers.interfaces.person_creator_controller",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces.person_creator_controller",
-        "documentation": {}
-    },
-    {
         "label": "PeopleRepositoryInterface",
         "importPath": "src.models.sqlite.interfaces.people_repository",
         "description": "src.models.sqlite.interfaces.people_repository",
@@ -330,7 +322,7 @@
         "documentation": {}
     },
     {
-        "label": "PetListControllerInterface",
+        "label": "PetListerControllerInterface",
         "importPath": "src.controllers.interfaces.pet_lister_controller",
         "description": "src.controllers.interfaces.pet_lister_controller",
         "isExtraImport": true,
@@ -682,6 +674,110 @@
         "documentation": {}
     },
     {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetListerControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "isExtraImport": true,
+        "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "isExtraImport": true,
+        "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
+        "label": "ViewInterface",
+        "importPath": "src.views.interfaces.view_interface",
+        "description": "src.views.interfaces.view_interface",
+        "isExtraImport": true,
+        "detail": "src.views.interfaces.view_interface",
+        "documentation": {}
+    },
+    {
         "label": "ViewInterface",
         "importPath": "src.views.interfaces.view_interface",
         "description": "src.views.interfaces.view_interface",
@@ -717,11 +813,11 @@
         "documentation": {}
     },
     {
-        "label": "PetListControllerInterface",
+        "label": "PetListerControllerInterface",
         "kind": 6,
         "importPath": "src.controllers.interfaces.pet_lister_controller",
         "description": "src.controllers.interfaces.pet_lister_controller",
-        "peekOfCode": "class PetListControllerInterface(ABC):\n    @abstractmethod\n    def list(self) -> dict: ...",
+        "peekOfCode": "class PetListerControllerInterface(ABC):\n    @abstractmethod\n    def list(self) -> dict: ...",
         "detail": "src.controllers.interfaces.pet_lister_controller",
         "documentation": {}
     },
@@ -820,7 +916,7 @@
         "kind": 6,
         "importPath": "src.controllers.pet_lister_controller",
         "description": "src.controllers.pet_lister_controller",
-        "peekOfCode": "class PetListController(PetListControllerInterface):\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def list(self) -> dict:\n        pets = self.__pets_in_db()\n        return self.__format_response(pets)\n    def __pets_in_db(self) -> List[PetsTable]:\n        return self.__pet_repository.list_pets()\n    def __format_response(self, pets: List[PetsTable]) -> dict:\n        formatted_pets = []",
+        "peekOfCode": "class PetListController(PetListerControllerInterface):\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def list(self) -> dict:\n        pets = self.__pets_in_db()\n        return self.__format_response(pets)\n    def __pets_in_db(self) -> List[PetsTable]:\n        return self.__pet_repository.list_pets()\n    def __format_response(self, pets: List[PetsTable]) -> dict:\n        formatted_pets = []",
         "detail": "src.controllers.pet_lister_controller",
         "documentation": {}
     },
@@ -1065,6 +1161,33 @@
         "description": "src.views.person_creator_view",
         "peekOfCode": "class PersonCreatorView(ViewInterface):\n    def __init__(self, controller: PersonCreatorControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        person_info = http_request.body\n        if not person_info:\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.create(person_info)\n        return HttpResponse(status_code=201, body=body_response)",
         "detail": "src.views.person_creator_view",
+        "documentation": {}
+    },
+    {
+        "label": "PersonDeleterView",
+        "kind": 6,
+        "importPath": "src.views.person_deleter_view",
+        "description": "src.views.person_deleter_view",
+        "peekOfCode": "class PersonDeleterView(ViewInterface):\n    def __init__(self, controller: PetDeleterControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        if not http_request.body:\n            raise Exception(\"Body inválido\")\n        pet_name = http_request.body[\"name\"]\n        self.__controller.delete(pet_name)\n        return HttpResponse(status_code=204)",
+        "detail": "src.views.person_deleter_view",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderView",
+        "kind": 6,
+        "importPath": "src.views.person_finder_view",
+        "description": "src.views.person_finder_view",
+        "peekOfCode": "class PersonFinderView(ViewInterface):\n    def __init__(self, controller: PersonFinderControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        person_id = http_request.body\n        if not person_id or not isinstance(person_id, int):\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.find(person_id)\n        return HttpResponse(status_code=200, body=body_response)",
+        "detail": "src.views.person_finder_view",
+        "documentation": {}
+    },
+    {
+        "label": "PetListerView",
+        "kind": 6,
+        "importPath": "src.views.pet_lister_view",
+        "description": "src.views.pet_lister_view",
+        "peekOfCode": "class PetListerView(ViewInterface):\n    def __init__(self, controller: PetListerControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        body_response = self.__controller.list()\n        return HttpResponse(status_code=201, body=body_response)",
+        "detail": "src.views.pet_lister_view",
         "documentation": {}
     },
     {
