@@ -1,11 +1,123 @@
 [
     {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "re",
         "description": "re",
         "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorControllerInterface",
+        "importPath": "src.controllers.interfaces.person_creator_controller",
+        "description": "src.controllers.interfaces.person_creator_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces.person_creator_controller",
         "documentation": {}
     },
     {
@@ -130,6 +242,22 @@
         "documentation": {}
     },
     {
+        "label": "PersonFinderControllerInterface",
+        "importPath": "src.controllers.interfaces.person_finder_controller",
+        "description": "src.controllers.interfaces.person_finder_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces.person_finder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
+        "importPath": "src.controllers.interfaces.pet_deleter_controller",
+        "description": "src.controllers.interfaces.pet_deleter_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces.pet_deleter_controller",
+        "documentation": {}
+    },
+    {
         "label": "PetsRepositoryInterface",
         "importPath": "src.models.sqlite.interfaces.pets_repository",
         "description": "src.models.sqlite.interfaces.pets_repository",
@@ -175,6 +303,14 @@
         "description": "unittest.mock",
         "isExtraImport": true,
         "detail": "unittest.mock",
+        "documentation": {}
+    },
+    {
+        "label": "PetListControllerInterface",
+        "importPath": "src.controllers.interfaces.pet_lister_controller",
+        "description": "src.controllers.interfaces.pet_lister_controller",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces.pet_lister_controller",
         "documentation": {}
     },
     {
@@ -378,46 +514,6 @@
         "documentation": {}
     },
     {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractmethod",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "abstractmethod",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
-        "label": "ABC",
-        "importPath": "abc",
-        "description": "abc",
-        "isExtraImport": true,
-        "detail": "abc",
-        "documentation": {}
-    },
-    {
         "label": "NoResultFound",
         "importPath": "sqlalchemy.exc",
         "description": "sqlalchemy.exc",
@@ -530,11 +626,47 @@
         "documentation": {}
     },
     {
+        "label": "PersonCreatorControllerInterface",
+        "kind": 6,
+        "importPath": "src.controllers.interfaces.person_creator_controller",
+        "description": "src.controllers.interfaces.person_creator_controller",
+        "peekOfCode": "class PersonCreatorControllerInterface(ABC):\n    @abstractmethod\n    def create(self, person_info: dict) -> dict: ...",
+        "detail": "src.controllers.interfaces.person_creator_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderControllerInterface",
+        "kind": 6,
+        "importPath": "src.controllers.interfaces.person_finder_controller",
+        "description": "src.controllers.interfaces.person_finder_controller",
+        "peekOfCode": "class PersonFinderControllerInterface(ABC):\n    @abstractmethod\n    def find(self, person_id: int) -> dict: ...",
+        "detail": "src.controllers.interfaces.person_finder_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
+        "kind": 6,
+        "importPath": "src.controllers.interfaces.pet_deleter_controller",
+        "description": "src.controllers.interfaces.pet_deleter_controller",
+        "peekOfCode": "class PetDeleterControllerInterface(ABC):\n    @abstractmethod\n    def delete(self, name: str) -> None: ...",
+        "detail": "src.controllers.interfaces.pet_deleter_controller",
+        "documentation": {}
+    },
+    {
+        "label": "PetListControllerInterface",
+        "kind": 6,
+        "importPath": "src.controllers.interfaces.pet_lister_controller",
+        "description": "src.controllers.interfaces.pet_lister_controller",
+        "peekOfCode": "class PetListControllerInterface(ABC):\n    @abstractmethod\n    def list(self) -> dict: ...",
+        "detail": "src.controllers.interfaces.pet_lister_controller",
+        "documentation": {}
+    },
+    {
         "label": "PersonCreatorController",
         "kind": 6,
         "importPath": "src.controllers.person_creator_controller",
         "description": "src.controllers.person_creator_controller",
-        "peekOfCode": "class PersonCreatorController:\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def create(self, person_info: dict) -> dict:\n        first_name = person_info[\"first_name\"]\n        last_name = person_info[\"last_name\"]\n        age = person_info[\"age\"]\n        pet_id = person_info[\"pet_id\"]\n        self.__validate_first_and_last_name(first_name, last_name)\n        self.__insert_person_in_db(first_name, last_name, age, pet_id)",
+        "peekOfCode": "class PersonCreatorController(PersonCreatorControllerInterface):\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def create(self, person_info: dict) -> dict:\n        first_name = person_info[\"first_name\"]\n        last_name = person_info[\"last_name\"]\n        age = person_info[\"age\"]\n        pet_id = person_info[\"pet_id\"]\n        self.__validate_first_and_last_name(first_name, last_name)\n        self.__insert_person_in_db(first_name, last_name, age, pet_id)",
         "detail": "src.controllers.person_creator_controller",
         "documentation": {}
     },
@@ -570,7 +702,7 @@
         "kind": 6,
         "importPath": "src.controllers.person_finder_controller",
         "description": "src.controllers.person_finder_controller",
-        "peekOfCode": "class PersonFinderController:\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def find(self, person_id: int) -> dict:\n        person = self.__find_person_in_db(person_id)\n        return self.__format_response(person)\n    def __find_person_in_db(self, person_id: int) -> Any:\n        person = self.__people_repository.get_person(person_id)\n        if not person:\n            raise Exception(\"Pessoa não encontrada\")",
+        "peekOfCode": "class PersonFinderController(PersonFinderControllerInterface):\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def find(self, person_id: int) -> dict:\n        person = self.__find_person_in_db(person_id)\n        return self.__format_response(person)\n    def __find_person_in_db(self, person_id: int) -> Any:\n        person = self.__people_repository.get_person(person_id)\n        if not person:\n            raise Exception(\"Pessoa não encontrada\")",
         "detail": "src.controllers.person_finder_controller",
         "documentation": {}
     },
@@ -606,7 +738,7 @@
         "kind": 6,
         "importPath": "src.controllers.pet_deleter_controller",
         "description": "src.controllers.pet_deleter_controller",
-        "peekOfCode": "class PetDeleterController:\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def delete(self, name: str) -> None:\n        self.__pet_repository.delete_pet(name)",
+        "peekOfCode": "class PetDeleterController(PetDeleterControllerInterface):\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def delete(self, name: str) -> None:\n        self.__pet_repository.delete_pet(name)",
         "detail": "src.controllers.pet_deleter_controller",
         "documentation": {}
     },
@@ -624,7 +756,7 @@
         "kind": 6,
         "importPath": "src.controllers.pet_lister_controller",
         "description": "src.controllers.pet_lister_controller",
-        "peekOfCode": "class PetListController:\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def list(self) -> dict:\n        pets = self.__pets_in_db()\n        return self.__format_response(pets)\n    def __pets_in_db(self) -> List[PetsTable]:\n        return self.__pet_repository.list_pets()\n    def __format_response(self, pets: List[PetsTable]) -> dict:\n        formatted_pets = []",
+        "peekOfCode": "class PetListController(PetListControllerInterface):\n    def __init__(self, pet_repository: PetsRepositoryInterface) -> None:\n        self.__pet_repository = pet_repository\n    def list(self) -> dict:\n        pets = self.__pets_in_db()\n        return self.__format_response(pets)\n    def __pets_in_db(self) -> List[PetsTable]:\n        return self.__pet_repository.list_pets()\n    def __format_response(self, pets: List[PetsTable]) -> dict:\n        formatted_pets = []",
         "detail": "src.controllers.pet_lister_controller",
         "documentation": {}
     },
