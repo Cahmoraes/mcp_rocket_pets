@@ -130,50 +130,106 @@
     },
     {
         "label": "PersonCreatorControllerInterface",
-        "importPath": "src.controllers.interfaces.person_creator_controller",
-        "description": "src.controllers.interfaces.person_creator_controller",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
         "isExtraImport": true,
-        "detail": "src.controllers.interfaces.person_creator_controller",
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetListerControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PersonCreatorControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PersonFinderControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetDeleterControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "PetListerControllerInterface",
+        "importPath": "src.controllers.interfaces",
+        "description": "src.controllers.interfaces",
+        "isExtraImport": true,
+        "detail": "src.controllers.interfaces",
+        "documentation": {}
+    },
+    {
+        "label": "HttpNotFoundError",
+        "importPath": "src.errors.error_types",
+        "description": "src.errors.error_types",
+        "isExtraImport": true,
+        "detail": "src.errors.error_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpNotFoundError",
+        "importPath": "src.errors.error_types",
+        "description": "src.errors.error_types",
+        "isExtraImport": true,
+        "detail": "src.errors.error_types",
         "documentation": {}
     },
     {
         "label": "PeopleRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.people_repository",
-        "description": "src.models.sqlite.interfaces.people_repository",
+        "importPath": "src.models.sqlite.interfaces",
+        "description": "src.models.sqlite.interfaces",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.people_repository",
+        "detail": "src.models.sqlite.interfaces",
         "documentation": {}
     },
     {
         "label": "PeopleRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.people_repository",
-        "description": "src.models.sqlite.interfaces.people_repository",
+        "importPath": "src.models.sqlite.interfaces",
+        "description": "src.models.sqlite.interfaces",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.people_repository",
+        "detail": "src.models.sqlite.interfaces",
         "documentation": {}
     },
     {
-        "label": "PeopleRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.people_repository",
-        "description": "src.models.sqlite.interfaces.people_repository",
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces",
+        "description": "src.models.sqlite.interfaces",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.people_repository",
+        "detail": "src.models.sqlite.interfaces",
         "documentation": {}
     },
     {
-        "label": "PeopleRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.people_repository",
-        "description": "src.models.sqlite.interfaces.people_repository",
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces",
+        "description": "src.models.sqlite.interfaces",
         "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.people_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PeopleRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.people_repository",
-        "description": "src.models.sqlite.interfaces.people_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.people_repository",
+        "detail": "src.models.sqlite.interfaces",
         "documentation": {}
     },
     {
@@ -258,6 +314,30 @@
         "documentation": {}
     },
     {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PeopleRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.people_repository",
+        "description": "src.models.sqlite.interfaces.people_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.people_repository",
+        "documentation": {}
+    },
+    {
         "label": "PersonFinderControllerInterface",
         "importPath": "src.controllers.interfaces.person_finder_controller",
         "description": "src.controllers.interfaces.person_finder_controller",
@@ -274,46 +354,6 @@
         "documentation": {}
     },
     {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
-        "documentation": {}
-    },
-    {
-        "label": "PetsRepositoryInterface",
-        "importPath": "src.models.sqlite.interfaces.pets_repository",
-        "description": "src.models.sqlite.interfaces.pets_repository",
-        "isExtraImport": true,
-        "detail": "src.models.sqlite.interfaces.pets_repository",
-        "documentation": {}
-    },
-    {
         "label": "Mock",
         "importPath": "unittest.mock",
         "description": "unittest.mock",
@@ -322,11 +362,27 @@
         "documentation": {}
     },
     {
-        "label": "PetListerControllerInterface",
-        "importPath": "src.controllers.interfaces.pet_lister_controller",
-        "description": "src.controllers.interfaces.pet_lister_controller",
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
         "isExtraImport": true,
-        "detail": "src.controllers.interfaces.pet_lister_controller",
+        "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
+        "documentation": {}
+    },
+    {
+        "label": "PetsRepositoryInterface",
+        "importPath": "src.models.sqlite.interfaces.pets_repository",
+        "description": "src.models.sqlite.interfaces.pets_repository",
+        "isExtraImport": true,
+        "detail": "src.models.sqlite.interfaces.pets_repository",
         "documentation": {}
     },
     {
@@ -994,46 +1050,6 @@
         "documentation": {}
     },
     {
-        "label": "PersonCreatorControllerInterface",
-        "importPath": "src.controllers.interfaces",
-        "description": "src.controllers.interfaces",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces",
-        "documentation": {}
-    },
-    {
-        "label": "PetDeleterControllerInterface",
-        "importPath": "src.controllers.interfaces",
-        "description": "src.controllers.interfaces",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces",
-        "documentation": {}
-    },
-    {
-        "label": "PersonFinderControllerInterface",
-        "importPath": "src.controllers.interfaces",
-        "description": "src.controllers.interfaces",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces",
-        "documentation": {}
-    },
-    {
-        "label": "PetDeleterControllerInterface",
-        "importPath": "src.controllers.interfaces",
-        "description": "src.controllers.interfaces",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces",
-        "documentation": {}
-    },
-    {
-        "label": "PetListerControllerInterface",
-        "importPath": "src.controllers.interfaces",
-        "description": "src.controllers.interfaces",
-        "isExtraImport": true,
-        "detail": "src.controllers.interfaces",
-        "documentation": {}
-    },
-    {
         "label": "ViewInterface",
         "importPath": "src.views.interfaces.view_interface",
         "description": "src.views.interfaces.view_interface",
@@ -1158,7 +1174,7 @@
         "kind": 6,
         "importPath": "src.controllers.person_finder_controller",
         "description": "src.controllers.person_finder_controller",
-        "peekOfCode": "class PersonFinderController(PersonFinderControllerInterface):\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def find(self, person_id: int) -> dict:\n        person = self.__find_person_in_db(person_id)\n        return self.__format_response(person)\n    def __find_person_in_db(self, person_id: int) -> Any:\n        person = self.__people_repository.get_person(person_id)\n        if not person:\n            raise Exception(\"Pessoa não encontrada\")",
+        "peekOfCode": "class PersonFinderController(PersonFinderControllerInterface):\n    def __init__(self, people_repository: PeopleRepositoryInterface) -> None:\n        self.__people_repository = people_repository\n    def find(self, person_id: int) -> dict:\n        person = self.__find_person_in_db(person_id)\n        return self.__format_response(person)\n    def __find_person_in_db(self, person_id: int) -> Any:\n        person = self.__people_repository.get_person(person_id)\n        if not person:\n            raise HttpNotFoundError(\"Pessoa não encontrada\")",
         "detail": "src.controllers.person_finder_controller",
         "documentation": {}
     },
@@ -1232,6 +1248,33 @@
         "description": "src.controllers.pet_lister_controller_test",
         "peekOfCode": "def test_list_pets():\n    controller = PetListController(MockPetsRepository())\n    response = controller.list()\n    expected_response = {\n        \"data\": {\n            \"type\": \"Pets\",\n            \"count\": 2,\n            \"attributes\": [{\"name\": \"Fluffy\", \"id\": 4}, {\"name\": \"Buddy\", \"id\": 47}],\n        }\n    }",
         "detail": "src.controllers.pet_lister_controller_test",
+        "documentation": {}
+    },
+    {
+        "label": "HttpBadRequestError",
+        "kind": 6,
+        "importPath": "src.errors.error_types.http_bad_request",
+        "description": "src.errors.error_types.http_bad_request",
+        "peekOfCode": "class HttpBadRequestError(Exception):\n    def __init__(self, message: str) -> None:\n        super().__init__(message)\n        self.status_code = 400\n        self.name = \"BadRequest\"\n        self.message = message",
+        "detail": "src.errors.error_types.http_bad_request",
+        "documentation": {}
+    },
+    {
+        "label": "HttpNotFoundError",
+        "kind": 6,
+        "importPath": "src.errors.error_types.http_not_found",
+        "description": "src.errors.error_types.http_not_found",
+        "peekOfCode": "class HttpNotFoundError(Exception):\n    def __init__(self, message: str) -> None:\n        super().__init__(message)\n        self.status_code = 404\n        self.name = \"NotFound\"\n        self.message = message",
+        "detail": "src.errors.error_types.http_not_found",
+        "documentation": {}
+    },
+    {
+        "label": "HttpUnprocessableEntityError",
+        "kind": 6,
+        "importPath": "src.errors.error_types.http_unprocessable_entity",
+        "description": "src.errors.error_types.http_unprocessable_entity",
+        "peekOfCode": "class HttpUnprocessableEntityError(Exception):\n    def __init__(self, message: str) -> None:\n        super().__init__(message)\n        self.status_code = 422\n        self.name = \"UnprocessableEntity\"\n        self.message = message",
+        "detail": "src.errors.error_types.http_unprocessable_entity",
         "documentation": {}
     },
     {

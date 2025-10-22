@@ -3,7 +3,8 @@ from typing import Any
 from src.controllers.interfaces.person_finder_controller import (
     PersonFinderControllerInterface,
 )
-from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
+from src.errors.error_types import HttpNotFoundError
+from src.models.sqlite.interfaces import PeopleRepositoryInterface
 
 
 class PersonFinderController(PersonFinderControllerInterface):
@@ -17,7 +18,7 @@ class PersonFinderController(PersonFinderControllerInterface):
     def __find_person_in_db(self, person_id: int) -> Any:
         person = self.__people_repository.get_person(person_id)
         if not person:
-            raise Exception("Pessoa não encontrada")
+            raise HttpNotFoundError("Pessoa não encontrada")
         return person
 
     def __format_response(self, person_info: Any) -> dict:
