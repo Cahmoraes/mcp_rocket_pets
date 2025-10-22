@@ -185,7 +185,7 @@
         "documentation": {}
     },
     {
-        "label": "HttpNotFoundError",
+        "label": "HttpUnprocessableEntityError",
         "importPath": "src.errors.error_types",
         "description": "src.errors.error_types",
         "isExtraImport": true,
@@ -442,6 +442,126 @@
         "documentation": {}
     },
     {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpRequest",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "src.views.http_types",
+        "description": "src.views.http_types",
+        "isExtraImport": true,
+        "detail": "src.views.http_types",
+        "documentation": {}
+    },
+    {
         "label": "PersonCreatorController",
         "importPath": "src.controllers.person_creator_controller",
         "description": "src.controllers.person_creator_controller",
@@ -666,6 +786,22 @@
         "documentation": {}
     },
     {
+        "label": "handle_errors",
+        "importPath": "src.errors.error_handler",
+        "description": "src.errors.error_handler",
+        "isExtraImport": true,
+        "detail": "src.errors.error_handler",
+        "documentation": {}
+    },
+    {
+        "label": "handle_errors",
+        "importPath": "src.errors.error_handler",
+        "description": "src.errors.error_handler",
+        "isExtraImport": true,
+        "detail": "src.errors.error_handler",
+        "documentation": {}
+    },
+    {
         "label": "person_creator_composer",
         "importPath": "src.main.composer.person_creator_composer",
         "description": "src.main.composer.person_creator_composer",
@@ -679,118 +815,6 @@
         "description": "src.main.composer.person_finder_composer",
         "isExtraImport": true,
         "detail": "src.main.composer.person_finder_composer",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpRequest",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
-        "documentation": {}
-    },
-    {
-        "label": "HttpResponse",
-        "importPath": "src.views.http_types",
-        "description": "src.views.http_types",
-        "isExtraImport": true,
-        "detail": "src.views.http_types",
         "documentation": {}
     },
     {
@@ -1106,6 +1130,14 @@
         "documentation": {}
     },
     {
+        "label": "person_creator_validator",
+        "importPath": "src.validators.person_creator_validator",
+        "description": "src.validators.person_creator_validator",
+        "isExtraImport": true,
+        "detail": "src.validators.person_creator_validator",
+        "documentation": {}
+    },
+    {
         "label": "ViewInterface",
         "importPath": "src.views.interfaces.view_interface",
         "description": "src.views.interfaces.view_interface",
@@ -1320,8 +1352,17 @@
         "kind": 6,
         "importPath": "src.errors.error_types.http_unprocessable_entity",
         "description": "src.errors.error_types.http_unprocessable_entity",
-        "peekOfCode": "class HttpUnprocessableEntityError(Exception):\n    def __init__(self, **args: object) -> None:\n        super().__init__(**args)\n        self.status_code = 422\n        self.name = \"UnprocessableEntity\"\n        self.message = args[\"message\"]",
+        "peekOfCode": "class HttpUnprocessableEntityError(Exception):\n    def __init__(self, message: str | list) -> None:\n        super().__init__(message)\n        self.status_code = 422\n        self.name = \"UnprocessableEntity\"\n        self.message = message",
         "detail": "src.errors.error_types.http_unprocessable_entity",
+        "documentation": {}
+    },
+    {
+        "label": "handle_errors",
+        "kind": 2,
+        "importPath": "src.errors.error_handler",
+        "description": "src.errors.error_handler",
+        "peekOfCode": "def handle_errors(error: Exception) -> HttpResponse:\n    if isinstance(\n        error, (HttpBadRequestError, HttpNotFoundError, HttpUnprocessableEntityError)\n    ):\n        return HttpResponse(\n            status_code=error.status_code,\n            body={\"errors\": [{\"title\": error.name, \"detail\": error.message}]},\n        )\n    return HttpResponse(\n        status_code=500,",
+        "detail": "src.errors.error_handler",
         "documentation": {}
     },
     {
@@ -1365,7 +1406,7 @@
         "kind": 2,
         "importPath": "src.main.routes.person_routes",
         "description": "src.main.routes.person_routes",
-        "peekOfCode": "def create_person():\n    http_request = HttpRequest(request.json)\n    view = person_creator_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@person_route_pb.route(\"/people/<int:person_id>\", methods=[\"GET\"])\ndef find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})\n    view = person_finder_composer()\n    http_response = view.handle(http_request)",
+        "peekOfCode": "def create_person():\n    try:\n        http_request = HttpRequest(request.json)\n        view = person_creator_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)\n        return jsonify(http_response.body), http_response.status_code\n@person_route_pb.route(\"/people/<int:person_id>\", methods=[\"GET\"])",
         "detail": "src.main.routes.person_routes",
         "documentation": {}
     },
@@ -1374,7 +1415,7 @@
         "kind": 2,
         "importPath": "src.main.routes.person_routes",
         "description": "src.main.routes.person_routes",
-        "peekOfCode": "def find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})\n    view = person_finder_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code",
+        "peekOfCode": "def find_person(person_id: int):\n    try:\n        http_request = HttpRequest(param={\"person_id\": person_id})\n        view = person_finder_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)\n        print(http_response.body)\n        return jsonify(http_response.body), http_response.status_code",
         "detail": "src.main.routes.person_routes",
         "documentation": {}
     },
@@ -1383,7 +1424,7 @@
         "kind": 5,
         "importPath": "src.main.routes.person_routes",
         "description": "src.main.routes.person_routes",
-        "peekOfCode": "person_route_pb = Blueprint(\"person_routes\", __name__)\n@person_route_pb.route(\"/person\", methods=[\"POST\"])\ndef create_person():\n    http_request = HttpRequest(request.json)\n    view = person_creator_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@person_route_pb.route(\"/people/<int:person_id>\", methods=[\"GET\"])\ndef find_person(person_id: int):\n    http_request = HttpRequest(param={\"person_id\": person_id})",
+        "peekOfCode": "person_route_pb = Blueprint(\"person_routes\", __name__)\n@person_route_pb.route(\"/person\", methods=[\"POST\"])\ndef create_person():\n    try:\n        http_request = HttpRequest(request.json)\n        view = person_creator_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)",
         "detail": "src.main.routes.person_routes",
         "documentation": {}
     },
@@ -1392,7 +1433,7 @@
         "kind": 2,
         "importPath": "src.main.routes.pets_routes",
         "description": "src.main.routes.pets_routes",
-        "peekOfCode": "def list_pets():\n    http_request = HttpRequest()\n    view = pet_lister_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@pet_route_pb.route(\"/pets/<name>\", methods=[\"DELETE\"])\ndef delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})\n    view = pet_deleter_composer()\n    http_response = view.handle(http_request)",
+        "peekOfCode": "def list_pets():\n    try:\n        http_request = HttpRequest()\n        view = pet_lister_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)\n        return jsonify(http_response.body), http_response.status_code\n@pet_route_pb.route(\"/pets/<name>\", methods=[\"DELETE\"])",
         "detail": "src.main.routes.pets_routes",
         "documentation": {}
     },
@@ -1401,7 +1442,7 @@
         "kind": 2,
         "importPath": "src.main.routes.pets_routes",
         "description": "src.main.routes.pets_routes",
-        "peekOfCode": "def delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})\n    view = pet_deleter_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code",
+        "peekOfCode": "def delete_pets(name: str):\n    try:\n        http_request = HttpRequest(param={\"name\": name})\n        view = pet_deleter_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)\n        return jsonify(http_response.body), http_response.status_code",
         "detail": "src.main.routes.pets_routes",
         "documentation": {}
     },
@@ -1410,7 +1451,7 @@
         "kind": 5,
         "importPath": "src.main.routes.pets_routes",
         "description": "src.main.routes.pets_routes",
-        "peekOfCode": "pet_route_pb = Blueprint(\"pets_routes\", __name__)\n@pet_route_pb.route(\"/pets\", methods=[\"GET\"])\ndef list_pets():\n    http_request = HttpRequest()\n    view = pet_lister_composer()\n    http_response = view.handle(http_request)\n    return jsonify(http_response.body), http_response.status_code\n@pet_route_pb.route(\"/pets/<name>\", methods=[\"DELETE\"])\ndef delete_pets(name: str):\n    http_request = HttpRequest(param={\"name\": name})",
+        "peekOfCode": "pet_route_pb = Blueprint(\"pets_routes\", __name__)\n@pet_route_pb.route(\"/pets\", methods=[\"GET\"])\ndef list_pets():\n    try:\n        http_request = HttpRequest()\n        view = pet_lister_composer()\n        http_response = view.handle(http_request)\n        return jsonify(http_response.body), http_response.status_code\n    except Exception as exc:\n        http_response = handle_errors(exc)",
         "detail": "src.main.routes.pets_routes",
         "documentation": {}
     },
@@ -1617,7 +1658,7 @@
         "kind": 2,
         "importPath": "src.validators.person_creator_validator",
         "description": "src.validators.person_creator_validator",
-        "peekOfCode": "def person_creator_validator(http_request: HttpRequest) -> None:\n    class BodyData(BaseModel):\n        first_name: str = Field(min_length=1)\n        last_name: str = Field(min_length=1)\n        age: int | None = None\n        pet_id: int\n    try:\n        BodyData(**cast(dict[str, Any], http_request.body))\n    except ValidationError as e:\n        raise HttpUnprocessableEntityError(args=e.errors())",
+        "peekOfCode": "def person_creator_validator(http_request: HttpRequest) -> None:\n    class BodyData(BaseModel):\n        first_name: str = Field(min_length=1)\n        last_name: str = Field(min_length=1)\n        age: int | None = None\n        pet_id: int\n    try:\n        BodyData(**cast(dict[str, Any], http_request.body))\n    except ValidationError as e:\n        raise HttpUnprocessableEntityError(message=e.errors())",
         "detail": "src.validators.person_creator_validator",
         "documentation": {}
     },
@@ -1671,7 +1712,7 @@
         "kind": 6,
         "importPath": "src.views.person_creator_view",
         "description": "src.views.person_creator_view",
-        "peekOfCode": "class PersonCreatorView(ViewInterface):\n    def __init__(self, controller: PersonCreatorControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        # person_creator_validator(http_request)\n        person_info = http_request.body\n        if not person_info:\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.create(person_info)\n        return HttpResponse(status_code=201, body=body_response)",
+        "peekOfCode": "class PersonCreatorView(ViewInterface):\n    def __init__(self, controller: PersonCreatorControllerInterface) -> None:\n        self.__controller = controller\n    def handle(self, http_request: HttpRequest) -> HttpResponse:\n        person_creator_validator(http_request)\n        person_info = http_request.body\n        if not person_info:\n            raise Exception(\"Body inválido\")\n        body_response = self.__controller.create(person_info)\n        return HttpResponse(status_code=201, body=body_response)",
         "detail": "src.views.person_creator_view",
         "documentation": {}
     },
