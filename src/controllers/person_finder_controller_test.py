@@ -1,22 +1,13 @@
-from typing import Any, TypedDict
+from typing import Any
 
 from src.models.sqlite.interfaces.people_repository import PeopleRepositoryInterface
 
 from .person_finder_controller import PersonFinderController
 
 
-class MockPerson(TypedDict):
-    first_name: str
-    last_name: str
-    pet_name: str
-    pet_type: str
-
-
 class MockRepository(PeopleRepositoryInterface):
     def get_person(self, person_id: int) -> Any:
-        return MockPerson(
-            first_name="John", last_name="Doe", pet_name="Fluffy", pet_type="cat"
-        )
+        return ("John", "Doe", "Fluffy", "cat")
 
     def insert_person(
         self, first_name: str, last_name: str, age: int, pet_id: int
